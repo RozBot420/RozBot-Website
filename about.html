@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me | Rozbot Travel Log</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Teko:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-shape bg-shape-a"></div>
+  <div class="bg-shape bg-shape-b"></div>
+
+  <header class="site-header">
+    <div class="brand">ROZBOT TRAVEL LOG</div>
+    <nav>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link active">About Me</a>
+      <a href="copenhagen.html" class="nav-link">Copenhagen</a>
+      <a href="krakow.html" class="nav-link">Krakow</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero reveal reveal-1">
+      <p class="eyebrow">My Why</p>
+      <h1>Living My Somedays</h1>
+      <p class="lead">
+        This chapter is the heart of my story. I lost three souls I loved deeply in a short time,
+        and that loss changed how I see time, love, and what matters most.
+      </p>
+      <div class="chip-row">
+        <span class="chip">Love Never Leaves</span>
+        <span class="chip">Memory In Motion</span>
+        <span class="chip">For My Angels</span>
+      </div>
+    </section>
+
+    <section class="highlights fear-block reveal reveal-2">
+      <div class="fear-layout">
+        <figure class="fear-photo">
+          <img src="images/whatififall.jpg" alt="What if I fall reminder about courage and risk" />
+        </figure>
+        <div class="fear-note">
+          <h2>What If I Fall?</h2>
+          <p>
+            Leaving everything I knew was terrifying: my job, my home, my people, and every familiar routine.
+            I stepped into countries where I knew no one, did not know the language, and could not predict if any of it would work out.
+          </p>
+          <p>
+            Sometimes we have to take the biggest risks to get the biggest rewards.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="highlights memorial-block reveal reveal-3">
+      <h2>My Angels</h2>
+      <p class="photo-note">
+        Mama Bear, Mike, and Rascal are the reason I stepped into this life. This journey is for them.
+      </p>
+
+      <div class="memorial-grid" aria-label="Memorial photos of Mama Bear, Mike, and Rascal">
+        <article class="angel-card">
+          <figure class="angel-photo">
+            <img src="images/mamabear2.jpg" alt="Mama Bear" />
+          </figure>
+          <h3>Mama Bear</h3>
+          <p>
+            The woman who stayed in my corner no matter what.
+            Even through divorce and difficult chapters, her friendship never wavered.
+          </p>
+        </article>
+
+        <article class="angel-card">
+          <figure class="angel-photo">
+            <img src="images/mike1.jpg" alt="Mike" />
+          </figure>
+          <h3>Mike</h3>
+          <p>
+            The dad figure who showed me what unconditional love looks like.
+            He gave me the kind of steady care I had not known before.
+          </p>
+        </article>
+
+        <article class="angel-card">
+          <figure class="angel-photo">
+            <img src="images/rascal-2.jpg" alt="Rascal Riley" />
+          </figure>
+          <h3>Rascal Riley</h3>
+          <p>
+            My anchor, my constant, my safe place in every storm.
+            Through homes, jobs, and relationships, it was always me and Rascal against the world.
+          </p>
+        </article>
+      </div>
+
+      <div class="tattoo-story">
+        <figure class="tattoo-photo">
+          <img src="images/tattoo2.jpeg" alt="Memorial tattoo" />
+          <figcaption>My memorial tattoo. Their ashes are embedded in the ink.</figcaption>
+        </figure>
+        <div class="tattoo-note">
+          <h3>Always With Me</h3>
+          <p>
+            Mama Bear and Mike were both diagnosed with pancreatic cancer, and after diagnosis
+            we had only days: Mama Bear passed 40 days later, Mike 10 days after that.
+            Within days of Rascal's prognosis, I had to let him go too.
+          </p>
+          <p>
+            That shock changed everything. They thought they had more time. We all think we have more time.
+            So I chose my most unrealistic someday and made it real: to live and work in Europe and see the world.
+            Every mile I walk now is in honor of them.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="highlights collage-block reveal reveal-3">
+      <h2>Memory Collage</h2>
+
+      <div class="paper-collage" aria-label="Cutout collage of Mama Bear, Mike, and Rascal photos">
+        <figure class="cutout c1"><img src="images/mamabear1.jpg" alt="Mama Bear memory one" /></figure>
+        <figure class="cutout c3"><img src="images/mamabear3.jpg" alt="Mama Bear memory three" /></figure>
+        <figure class="cutout c11"><img src="images/mamabear4.jpg" alt="Mama Bear memory four" /></figure>
+        <figure class="cutout c5"><img src="images/mike2.jpg" alt="Mike memory two" /></figure>
+        <figure class="cutout c12"><img src="images/mike3.jpg" alt="Mike memory three" /></figure>
+        <figure class="cutout c13"><img src="images/mike4.jpg" alt="Mike memory four" /></figure>
+        <figure class="cutout c14"><img src="images/mike5.jpg" alt="Mike memory five" /></figure>
+        <figure class="cutout c15"><img src="images/mamabear5.jpg" alt="Mama Bear memory five" /></figure>
+        <figure class="cutout c7"><img src="images/rascal-3.jpg" alt="Rascal memory two" /></figure>
+        <figure class="cutout c8"><img src="images/rascal-4.jpg" alt="Rascal memory three" /></figure>
+        <figure class="cutout c9"><img src="images/rascal-5.jpg" alt="Rascal memory four" /></figure>
+        <figure class="cutout c10"><img src="images/rascal-6.jpg" alt="Rascal memory five" /></figure>
+      </div>
+    </section>
+
+    <section class="highlights reveal reveal-3">
+      <h2>Where They Have Taken Me</h2>
+      <p class="photo-note">
+        Schengen-focused Europe map with geographically accurate push pins.
+      </p>
+
+      <div class="map-panel">
+        <div id="schengen-map" class="map-canvas" aria-label="Europe map with travel pins"></div>
+        <p class="map-note"><span class="legend-pin visited">📍</span> Visited <span class="legend-pin upcoming">📍</span> Upcoming</p>
+      </div>
+
+      <ul class="map-list">
+        <li>Portugal: Evora, Lisbon, Sintra, Obidos, Sesimbra</li>
+        <li>Germany: Munich</li>
+        <li>France: Toulouse</li>
+        <li>Spain: Seville</li>
+        <li>Italy: Palermo</li>
+        <li>Switzerland: Geneva, Vevey</li>
+        <li>Denmark: Copenhagen</li>
+        <li>Poland: Krakow</li>
+        <li>UPCOMING: Croatia - Split, Dubrovnik</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Every day, I live this life for them.</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="data/schengen-countries.js"></script>
+  <script>
+    (function () {
+      if (!window.L) return;
+
+      const map = L.map("schengen-map", {
+        attributionControl: false,
+        zoomControl: true,
+        zoomSnap: 0.1,
+        scrollWheelZoom: false
+      });
+
+      const visitedIcon = L.divIcon({
+        className: "pin-marker visited",
+        html: "<span class=\"pin-glyph\">📍</span>",
+        iconSize: [24, 24],
+        iconAnchor: [12, 22]
+      });
+
+      const upcomingIcon = L.divIcon({
+        className: "pin-marker upcoming",
+        html: "<span class=\"pin-glyph\">📍</span>",
+        iconSize: [24, 24],
+        iconAnchor: [12, 22]
+      });
+
+      const countries = [
+        "Portugal",
+        "Germany",
+        "France",
+        "Spain",
+        "Italy",
+        "Switzerland",
+        "Denmark",
+        "Poland",
+        "Croatia"
+      ];
+
+      const visitedLocations = [
+        { name: "Evora, Portugal", coords: [38.5714, -7.9135] },
+        { name: "Lisbon, Portugal", coords: [38.7223, -9.1393] },
+        { name: "Sintra, Portugal", coords: [38.8029, -9.3817] },
+        { name: "Obidos, Portugal", coords: [39.3606, -9.1567] },
+        { name: "Sesimbra, Portugal", coords: [38.4445, -9.1015] },
+        { name: "Munich, Germany", coords: [48.1351, 11.582] },
+        { name: "Toulouse, France", coords: [43.6047, 1.4442] },
+        { name: "Seville, Spain", coords: [37.3891, -5.9845] },
+        { name: "Palermo, Italy", coords: [38.1157, 13.3615] },
+        { name: "Geneva, Switzerland", coords: [46.2044, 6.1432] },
+        { name: "Vevey, Switzerland", coords: [46.4603, 6.8436] },
+        { name: "Copenhagen, Denmark", coords: [55.6761, 12.5683] },
+        { name: "Krakow, Poland", coords: [50.0647, 19.945] }
+      ];
+
+      const upcomingLocations = [
+        { name: "Split, Croatia (Upcoming)", coords: [43.5081, 16.4402] },
+        { name: "Dubrovnik, Croatia (Upcoming)", coords: [42.6507, 18.0944] }
+      ];
+
+      const EUROPE_EXTENT = {
+        minLon: -12,
+        maxLon: 33,
+        minLat: 35,
+        maxLat: 72
+      };
+
+      const isInEuropeExtent = (coord) => {
+        const lon = coord[0];
+        const lat = coord[1];
+        return lon >= EUROPE_EXTENT.minLon && lon <= EUROPE_EXTENT.maxLon && lat >= EUROPE_EXTENT.minLat && lat <= EUROPE_EXTENT.maxLat;
+      };
+
+      const polygonTouchesEurope = (polygon) => polygon.some((ring) => ring.some((coord) => isInEuropeExtent(coord)));
+
+      const clipGeometryToEurope = (geometry) => {
+        if (!geometry || !geometry.type || !geometry.coordinates) return null;
+
+        if (geometry.type === "Polygon") {
+          return polygonTouchesEurope(geometry.coordinates) ? geometry : null;
+        }
+
+        if (geometry.type === "MultiPolygon") {
+          const keptPolygons = geometry.coordinates.filter((polygon) => polygonTouchesEurope(polygon));
+          if (!keptPolygons.length) return null;
+          return {
+            type: "MultiPolygon",
+            coordinates: keptPolygons
+          };
+        }
+
+        return null;
+      };
+
+      const bounds = [];
+
+      const addCountryLabels = (layer) => {
+        layer.eachLayer((countryLayer) => {
+          const feature = countryLayer.feature;
+          const countryName = feature && feature.properties && feature.properties.name;
+          if (!countryName) return;
+
+          const center = countryLayer.getBounds().getCenter();
+          L.marker(center, {
+            interactive: false,
+            icon: L.divIcon({
+              className: "country-label",
+              html: `<span>${countryName}</span>`,
+              iconSize: [120, 20],
+              iconAnchor: [60, 10]
+            })
+          }).addTo(map);
+        });
+      };
+
+      const addPins = () => {
+        visitedLocations.forEach((spot) => {
+          L.marker(spot.coords, { icon: visitedIcon })
+            .addTo(map)
+            .bindPopup(spot.name);
+          bounds.push(spot.coords);
+        });
+
+        upcomingLocations.forEach((spot) => {
+          L.marker(spot.coords, { icon: upcomingIcon })
+            .addTo(map)
+            .bindPopup(spot.name);
+          bounds.push(spot.coords);
+        });
+      };
+
+      const geojson = window.SCHENGEN_GEOJSON;
+      if (geojson && Array.isArray(geojson.features)) {
+        const selected = geojson.features.filter((feature) => {
+          const countryName = feature && feature.properties && feature.properties.name;
+          return countries.includes(countryName);
+        }).map((feature) => {
+          const clippedGeometry = clipGeometryToEurope(feature.geometry);
+          if (!clippedGeometry) return null;
+          return {
+            type: "Feature",
+            properties: feature.properties,
+            geometry: clippedGeometry
+          };
+        }).filter(Boolean);
+
+        const countryLayer = L.geoJSON(selected, {
+          style: {
+            color: "#3b2e47",
+            weight: 2,
+            opacity: 0.95,
+            fillColor: "#f4ecdf",
+            fillOpacity: 0.95
+          }
+        }).addTo(map);
+
+        addCountryLabels(countryLayer);
+
+        const countryBounds = countryLayer.getBounds();
+        if (countryBounds.isValid()) {
+          bounds.push(countryBounds.getSouthWest());
+          bounds.push(countryBounds.getNorthEast());
+        }
+      }
+
+      addPins();
+      map.fitBounds(bounds, { padding: [26, 26] });
+    })();
+  </script>
+</body>
+</html>
