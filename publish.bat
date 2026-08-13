@@ -43,7 +43,10 @@ echo.
 echo Publish complete.
 echo GitHub Pages will auto-rebuild from main.
 echo.
-echo Live site:
+echo Live site (direct):
 echo https://rozbot420.github.io/RozBot-Website/
+echo.
+echo Short link:
+echo https://tinyurl.com/livingmysomedays
 echo.
 pause
