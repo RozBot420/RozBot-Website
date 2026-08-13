@@ -166,6 +166,43 @@ h2 {
   color: var(--muted);
 }
 
+.about-hero-layout {
+  display: grid;
+  grid-template-columns: 1fr minmax(230px, 330px);
+  gap: 18px;
+  align-items: center;
+}
+
+.about-hero-copy {
+  min-width: 0;
+}
+
+.hero-polaroid {
+  margin: 0;
+  background: #f8f4ec;
+  border: 1px solid rgba(46, 30, 20, 0.24);
+  border-radius: 8px;
+  padding: 10px 10px 28px;
+  transform: rotate(2deg);
+  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.34);
+}
+
+.hero-polaroid img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+  border: 1px solid rgba(35, 24, 17, 0.16);
+}
+
+.hero-polaroid figcaption {
+  padding: 9px 2px 0;
+  color: #3b2e47;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: none;
+}
+
 .jump-row {
   margin: 14px 0 0;
 }
@@ -843,6 +880,16 @@ figure.empty-photo::before {
   .fear-layout,
   .tattoo-story {
     grid-template-columns: 1fr;
+  }
+
+  .about-hero-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-polaroid {
+    transform: none;
+    width: min(100%, 360px);
+    justify-self: center;
   }
 
   .paper-collage {
