@@ -26,7 +26,7 @@ echo Creating commit...
 git commit -m "%MSG%"
 if errorlevel 1 (
   echo.
-  echo No new commit created (possibly no file changes).
+  echo No new commit created - possibly no file changes.
 )
 
 echo.
